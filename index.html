@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-switch">
+                <button id="loginBtn" class="active">Login</button>
+                <button id="signupBtn">Sign Up</button>
+            </div>
+            <form id="loginForm" class="form">
+                <h2>Login</h2>
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                <button type="submit">Login</button><br/>
+                
+                <p style="font-weight: bold;">Or</p>
+                <div class="social-signin">
+                    <a id="googleSignin" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Google_Plus_logo_%282015-2019%29.svg" alt="Sign in with Google"></a>
+                    <a id="facebookSignin" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png" alt="Sign in with Facebook"></a>
+                    <a id="twitterSignin" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Coast_twitter.png" alt="Sign in with Twitter"></a>
+                </div>
+            </form>
+            <form id="signupForm" class="form hidden">
+                <h2>Sign Up</h2>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+                <button type="submit">Sign Up</button>
+                <p style="font-weight: bold;">Or</p>
+                <div class="social-signin">
+                    <a id="googleSignin" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Google_Plus_logo_%282015-2019%29.svg" alt="Sign in with Google"></a>
+                    <a id="facebookSignin" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png" alt="Sign in with Facebook"></a>
+                    <a id="twitterSignin" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Coast_twitter.png" alt="Sign in with Twitter"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
